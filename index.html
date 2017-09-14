@@ -1,0 +1,99 @@
+<!--
+    index.html for Hangman-Style-Game
+    BootCamp at UNC Homework Assignment 3
+    September 16, 2017
+    Bo Slott
+-->
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8"">
+  <meta name="viewport" contents="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="assets/css/reset.css" />
+
+  <!-- Bootstrap 3.3.7 CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+  <!-- Game CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title id="theme-title"></title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <p id="pokemonTheme">Pokemon Theme</p>
+      <p id="slottFamilyTheme">Slott Family Theme</p>
+    </div>
+
+    <div class="row gamePlay-board-display">
+
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 gamePlay-board">
+        
+        <div class="row guesses-remain-display">
+          <div>
+            <h2>Guesses<br />Remaining</h2>
+          </div>
+          <div>
+            <p class="data-box"><span id="wrong-guesses-remain"></span></p>
+          </div>
+        </div>
+
+        <div class="row charImg-display">
+          <img src="" alt="" />
+        </div>
+
+        <div class="row lettersUsed-display">
+          <p><span id="letters-used"></span></p>
+        </div>
+
+        <div class="row charName-display">
+          <p class="data-box">T</p>
+        </div>
+
+        <div class="row totals">
+          <h2>Games:</h2>
+          <p class="data-box"><span id="tot-games"></span></p>
+          <h2>Wins:</h2>
+          <p class="data-box"><span id="tot-wins"></span></p>
+        </div>
+
+        <div class="row reset-display">
+          <button id="reset-btn" class="game-buttons">RESET ALL</button>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+<!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Bootstrap javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Object Constructors -->
+  <script src="assets/javascript/object-constructors.js"></script>
+
+  <!-- Slott Family Hangman Theme -->
+  <script src="assets/themes/slottFamilyTheme.js"></script>
+
+  <!-- Pokemon Hangman Theme -->
+<!--   <script src="assets/themes/pokemonTheme.js"></script>
+ -->
+
+  <!-- Game javascript sheet -->
+  <script src="assets/javascript/game.js"></script>
+
+    
+</body>
+</html>

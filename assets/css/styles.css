@@ -1,0 +1,92 @@
+/*
+  styles.css for Hangman-Style-Game
+  BootCamp at UNC Homework Assignment 3
+  September 16, 2017
+  Bo Slott
+*/
+
+
+/* Typography */
+
+
+/* Structure */
+
+  /* gamePlay Board */
+
+    .gamePlay-board-display {
+      padding-top: 20px;
+    }
+
+    .gamePlay-board {
+      outline: 2px dotted red;
+    }
+
+    .guesses-remain-display {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .guesses-remain-display h2, .guesses-remain-display p {
+      margin: 10px;
+    }
+
+    .guesses-remain-display h2 {
+      font-size: 14px;
+    }
+
+    .charImg-display {
+      text-align: center;
+    }
+
+    .charImg-display img {
+      margin: auto auto;
+    }
+
+    .lettersUsed-display {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .lettersUsed-display p {
+      font-size: 14px;
+      color: #00FF78;
+      margin: 0 30px;
+    }
+
+    .charName-display {
+      display: flex;
+      justify-content: center;
+    }
+
+    .totals {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .totals h2 {
+      font-size: 24px;
+      /*margin: 0 auto;*/
+    }
+
+    .reset-display {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+
+/* General */
+
+  /* Repeat Styles */
+
+    .data-box {
+      width: 40px;
+      height: 40px;
+      background-color: #E2F9FF;
+      border-style: solid;
+      border-color: #1FD0FF;
+      border-width: 1px;
+      color: #E83F0C;
+      text-align: center;
+      font-size: 28px;
+    }
+
