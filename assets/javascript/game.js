@@ -8,44 +8,61 @@
 
 
 
-
-// console.log(game.currentTheme.name);
-
-
-document.getElementById("pokemonTheme").onclick = function(event) {
-  game.currentTheme = pokemonTheme;
-};
-
-document.getElementById("slottFamilyTheme").onclick = function(event) {
-  game.setCurrentTheme(slottFamily);
-}
-console.log(slottFamily.charsList[3]);
-console.log(game.currentTheme.name);
+document.onload = gameOn ();    // A different game-initiation-event will be added
 
 //
-//    Begin Game Play
+//    Begin a new game with the property values of the parameter
 //
+//    ** - Need To Add Parameter - **
+//
+function gameOn () {
 
-// Create a new game
+  // 
+  //    Begin Game Play
+  //
   var game = new Hangman ();
 
-// Set the current theme
-  // game.setCurrentTheme (slottFamily);
+//
+//    Sets a default theme to begin game play
+//
+  game.currentTheme = slottFamily;
 
-// Set a new gamePlay character
-  game.setGamePlayCharacter();
+  document.getElementById("reset-btn").onclick = function (event) {
+      game.resetGame();
+    }
 
-  game.lettersUsed = ["S", "B", "T", "A"];
+  //
+  //    Allow a theme selction
+  //
+  document.getElementById("pokemonTheme").onclick = function(event) {
+    game.currentTheme = pokemonTheme;
+    game.newGame();
+    game.renderGameBoard();
+  }
 
-// Render a new gamePlay board
-  game.renderGameBoard ();
+  document.getElementById("slottFamilyTheme").onclick = function(event) {
+    game.currentTheme = slottFamily;
+    game.newGame();
+    game.renderGameBoard(); 
+  }
 
 
-console.log(game.currentTheme.name);
+  // Set a new gamePlay character
+    game.resetGamePlayCharacter();
 
+  // Render a new gamePlay board
+    game.renderGameBoard ();
 
+  //  User chooses a letter and it is compared to the correct answer
+    document.onkeyup = function(event) {
+      game.userGuess = event.key;
+      game.userGuess = game.userGuess.toUpperCase();
+      
+      game.guessComparison();
+    }
+}
 
-
+ 
 
 
 
