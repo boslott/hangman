@@ -8,30 +8,119 @@
 
 /* Typography */
 
+.instructions-text {
+  font-family: 'Freckle Face', cursive;
+}
+
+h2, h3 {
+  font-family: 'Frijole', cursive;
+}
+
+.logo {
+  font-family: 'Kranky', cursive;
+}
 
 /* Structure */
+
+  body {
+    background: url("../images/bedge_grunge.png");
+  }
+
+  .navbar-default {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+  }
+
+  .logo {
+    font-size: 36px;
+    color: #ff5208;
+    padding-left: 60px;
+    font-weight: bold;
+  }
+
+  .navbar-brand {
+    margin-top: 20px;
+  }
+
+  .container {
+    margin-bottom: 30px;
+  }
+
+/* Theme Buttons */
+
+  .theme-buttons-display {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 14px;
+    color: #6d38e8;
+  }
+
+  .btn {
+    margin-top: 8px;
+  }
+
+  /* Instructions */
+
+    .instructions-box {
+      margin-right: 5px;
+      text-align: center;
+    }
+
+    .instructions-header {
+      margin-top: 80px;
+    }
+
+    .instructions-header h2 {
+      font-size: 2.2em;
+      padding-right: 10px;
+      color: #6d38e8;
+    }
+
+    .instructions-text {
+      text-align: center;
+      padding: 5px 5px 40px 5px;
+      font-size: 24px;
+      color: #6d38e8;
+      border-style: solid;
+      border-color: #6d38e8;
+      border-bottom-width: 1px;
+      margin-bottom: 20px;
+    }
+
+    .themes-box {
+      text-align: center;
+    }
 
   /* gamePlay Board */
 
     .gamePlay-board-display {
-      padding-top: 20px;
+      margin: 20px 20px;
     }
 
     .gamePlay-board {
-      /*outline: 2px dotted red;*/
+      border-style: solid;
+      border-color: #6d38e8;
+      border-width: 16px;
+      background-color: #14e9ff;
+      border-radius: 8%;
+      margin-left: 5px;
     }
 
     .guesses-remain-display {
       display: flex;
       justify-content: flex-end;
+      color: #ff5208;
+      padding: 10px;
     }
 
-    .guesses-remain-display h2, .guesses-remain-display p {
-      margin: 10px;
+    .guesses-remain-display p {
+      margin: 20px;
     }
 
     .guesses-remain-display h2 {
-      font-size: 14px;
+      font-size: 22px;
     }
 
     .charImg-display {
@@ -42,6 +131,8 @@
       margin: auto auto;
       max-width: 150px;
       border-radius: 50%;
+      border-style: solid;
+      border-color: #6d38e8;
     }
 
     .lettersUsed-display {
@@ -64,6 +155,7 @@
     .totals {
       display: flex;
       justify-content: space-around;
+      color: #ff5208;
     }
 
     .totals h2 {
@@ -77,6 +169,18 @@
       margin-top: 20px;
     }
 
+    #reset-btn {
+      color: #6d38e8;
+    }
+
+  /* Site Footer */
+
+    .footer-copy {
+      text-align: center;
+      color: #ff5208;
+      font-size: 14px;
+    }
+
 
 /* General */
 
@@ -87,9 +191,10 @@
       height: 40px;
       background-color: #E2F9FF;
       border-style: solid;
-      border-color: #1FD0FF;
+      border-color: #ff5208;
       border-width: 1px;
-      color: #E83F0C;
+      border-radius: 10%;
+      color: #ff5208;
       text-align: center;
       font-size: 28px;
     }

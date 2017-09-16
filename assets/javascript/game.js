@@ -25,7 +25,7 @@ function gameOn () {
 //
 //    Sets a default theme to begin game play
 //
-  game.currentTheme = slottFamily;
+  game.currentTheme.setNewTheme(slottFamily);
 
   document.getElementById("reset-btn").onclick = function (event) {
       game.resetGame();
@@ -35,13 +35,13 @@ function gameOn () {
   //    Allow a theme selction
   //
   document.getElementById("pokemonTheme").onclick = function(event) {
-    game.currentTheme = pokemonTheme;
+    game.currentTheme.setNewTheme(pokemonTheme);
     game.newGame();
     game.renderGameBoard();
   }
 
   document.getElementById("slottFamilyTheme").onclick = function(event) {
-    game.currentTheme = slottFamily;
+    game.currentTheme.setNewTheme(slottFamily);
     game.newGame();
     game.renderGameBoard(); 
   }

@@ -1,4 +1,0 @@
-Pokemon
-Bo, ../images/bo.jpg
-Davis, ../images/davis.jpg
-Pikachu, ../images/pickahu.jpg
